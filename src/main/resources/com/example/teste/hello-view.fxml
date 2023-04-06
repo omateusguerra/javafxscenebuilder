@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="255.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teste.HelloController">
+   <children>
+      <VBox layoutX="20.0" layoutY="54.0" prefHeight="130.0" prefWidth="255.0" spacing="8.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="45.0">
+         <children>
+            <TextField fx:id="tfNome" promptText="Nome">
+               <VBox.margin>
+                  <Insets right="80.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfN1" promptText="Nota 1">
+               <VBox.margin>
+                  <Insets right="160.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfN2" promptText="Nota 2">
+               <VBox.margin>
+                  <Insets right="160.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="btnCalcula" mnemonicParsing="false" onAction="#calculaMedia" text="Button">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="20.0" layoutY="14.0" text="Calculo de Média">
+         <font>
+            <Font name="Candara" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
